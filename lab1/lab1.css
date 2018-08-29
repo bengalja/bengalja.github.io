@@ -1,0 +1,94 @@
+
+	body {
+		background-color: yellow;
+		border: 1px solid black; 
+	}
+
+	
+
+	div {
+		padding: 5px;
+		overflow : hidden;
+		margin : 5px;
+		border: 1px solid #ff0000;
+	}
+	.b1_1_1 div, .b1_1_2 div {
+		height : 110px;
+	}
+
+	.b1 .b1_2 div {
+		width:17%;
+	}
+
+	.b1 div.b1_2  {
+		margin: 0px;
+	}
+
+	.b1{
+		border-bottom: 15px grey solid;
+	}
+	.b1 .b1_1 div.b1_1_1 {
+		width:80%;
+		text-align : center;
+		font-size : 37px;
+		line-height : 65px;
+		text-shadow: 1px 1px 2px gainsboro, 0 0 1em darkgray;
+	}
+
+	.b1 .b1_1 div.b1_1_2 {
+		width:10%;
+	}
+	.b1_1 div, .b1_2 div {
+		float : left;
+		width : 10%;
+	}
+
+	.b1 {
+		width: 800px;
+		background-color: #57c14f;
+	}
+
+	.b1_2 {
+		width: 800px;
+		background-color: #11a909;
+	}
+
+	
+
+	.b1_1_2 img{
+		width:50px;
+	}
+		
+	.b2 {
+		width: 800px;
+		background-color: #57c14f;
+		border-bottom: 15px grey solid;
+	}
+	
+	.b2_4  img, .b2_5  img, .b2_6  img, .b2_7  img{
+		width:50px;
+		float:right;
+	}
+	.b2_1 {
+		width:80%;
+		text-align : center;
+		font-size : 37px;
+		line-height : 65px;
+		float:left;
+	}
+	.b2_2 {
+		width:20%;
+		text-align : center;
+		font-size : 37px;
+		line-height : 40px;
+		float:left;
+		
+	}
+	.b2_3{
+		width: 80%;
+	}
+	
+	.b3{
+	width: 800px;
+	background-color: #57c14f;
+	}1
