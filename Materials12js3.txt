@@ -1,0 +1,4 @@
+https://developer.mozilla.org/ru/docs/Web/API/Element/innerHTML
+https://learn.javascript.ru/object
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array
+https://www.w3schools.com/Js/js_json_parse.asp
