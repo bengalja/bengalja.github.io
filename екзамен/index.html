@@ -143,6 +143,32 @@ span{
 <span class="glow">
 ЯСКРАВО
 </span>
+	  <script>var $orbs = $('.orbs span');
+$('.end-right').css('left' , '-10%');
+$('.end-left').css('left', '110%');
+$orbs.velocity({'top': '-300px', scaleX: '.2', scaleY: '.2', color: '#990000'},0);
+var orb = 0;
+var numOrbs = $orbs.length;
+
+$('.end-right').velocity({left : '50%'}, 'easeOutExpo', 1200);
+$('.end-left').velocity({left : '50%'}, 'easeOutExpo',  1200);
+
+
+dropOrbs = function(){
+  $orbs.eq(orb).velocity({top: '70px'}, 400).velocity({scaleX: 1, scaleY: 1, color: '#fff'}, 1000).css('position', 'relative');
+  orb = orb + 1;
+  if(orb < numOrbs){
+    setTimeout(dropOrbs, 100);
+  }
+  else{
+    setTimeout(function(){$('.glow').velocity({opacity: 1}, 1200);}, 1200);
+
+  }
+  
+}
+
+setTimeout(dropOrbs, 400);
+	  </script>
   <div class="container-fluid p-0">
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
@@ -242,32 +268,7 @@ span{
 	</div>
   </div>
     
-<script>var $orbs = $('.orbs span');
-$('.end-right').css('left' , '-10%');
-$('.end-left').css('left', '110%');
-$orbs.velocity({'top': '-300px', scaleX: '.2', scaleY: '.2', color: '#990000'},0);
-var orb = 0;
-var numOrbs = $orbs.length;
-
-$('.end-right').velocity({left : '50%'}, 'easeOutExpo', 1200);
-$('.end-left').velocity({left : '50%'}, 'easeOutExpo',  1200);
-
-
-dropOrbs = function(){
-  $orbs.eq(orb).velocity({top: '70px'}, 400).velocity({scaleX: 1, scaleY: 1, color: '#fff'}, 1000).css('position', 'relative');
-  orb = orb + 1;
-  if(orb < numOrbs){
-    setTimeout(dropOrbs, 100);
-  }
-  else{
-    setTimeout(function(){$('.glow').velocity({opacity: 1}, 1200);}, 1200);
-
-  }
-  
-}
-
-setTimeout(dropOrbs, 400);
-	  </script>	
+	
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
