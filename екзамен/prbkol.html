@@ -6,6 +6,12 @@
 	<meta name="description" content="HTML5 demo using Canvas and JavaScript, 500 particles to play around with." />
 	<meta name="keywords" content="html5,particles,canvas" />
 	<meta name="viewport" content="width=device-width"/>
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
 	<style>
 		  html, body {
 			  text-align: center;
@@ -16,19 +22,20 @@
 			  line-height: 1.25em;
 		  }
 		  #outer {
-			  position: absolute;
-			  top: 50%;
+			  position: inherit;
+			  top: 100%;
 			  left: 50%;
 			  width: 1px;
 			  height: 1px;
 			  overflow: visible;
 		  }
 		  #canvasContainer {
-			  position: absolute;
-			  width: 1000px;
-			  height: 560px;
+			  position: inherit;
+			  width: 800px;
+			  height: 360px;
 			  top: -280px;
 			  left: -500px;
+			  margin:50px;
 		  }
 		  
 		  a {
@@ -52,8 +59,8 @@
 		  @media screen and (max-width: 650px){
 
 			  #canvasContainer {
-				  width: 310px;
-				  height: 200px;
+				  width: 100px;
+				  height: 100px;
 				  left: -155px;
 				  top: -150px;
 			  }
@@ -78,6 +85,33 @@ o=document.getElementById("mainCanvas");if(o.getContext){m=document.getElementBy
 F;document.onmouseup=G;document.onmousemove=E;setInterval(C,33);}else document.getElementById("output").innerHTML="Sorry, needs a recent version of Chrome, Firefox, Opera, Safari, or Internet Explorer 9."}})();
   </script>
   </head>
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#E1F5A9;">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+	aria-controls="navbarSupportedContent" aria-expanded="false" aria-lable="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item ">
+				<a href="#" class="nav-link"> Початкова сторінка</a>
+			</li>
+			<li class="nav-item ">
+				<a href="навчання.html" class="nav-link"> Мої досягнення</a>
+			</li>
+			
+			<li class="nav-item ">
+				<a href="#" class="nav-link" data-toggle="modal" data-target="#exampleModal"> Контакти</a>
+			</li>
+			<li class="nav-item active">
+				<a href="навчання.html" class="nav-link">Цікавинка-залипайка</a>
+			</li>
+		</ul>
+	<!--	<form class="form-inline my-2 my-lg-0">
+			<input type="text" class="form-control mr-sm-2" placeholder="Пошук" aria-lable="Пошук">
+			<button class="btn btn-outline-success my-2 my-sm-0">Шукати</button>
+		</form>-->
+	</div>
+  </nav>
   <body>
 	<div id="outer">
 		<div id="canvasContainer">
@@ -115,5 +149,10 @@ document.getElementById("app-link2").addEventListener( DOWN , function(){ pageTr
 //document.getElementById("more-experiments").addEventListener( DOWN , function(){ pageTracker._trackEvent( "LiquidParticles" , "more-experiments" , type , 1 ); } , false );
 }());
 </script>
+<div>
+<h3 >Ще одна сторінка.
+Нової інформації Ви тут не почерпнете, але трішки розважетесь.
+Водіть курсором по чорному фоні, натискайте кнопочки мишки і спостерігайте за видовищем :)</h3>
+</div>
 </body>
 </html>
